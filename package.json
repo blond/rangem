@@ -28,8 +28,8 @@
     "nyc": "^8.1.0"
   },
   "scripts": {
-    "pretest": "eslint .",
     "test": "nyc ava",
+    "lint": "eslint .",
     "unit-test": "ava",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   }
