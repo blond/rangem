@@ -7,8 +7,11 @@ matrix:
     - node_js: "0.10"
     - node_js: "0.12"
     - node_js: "4"
-      env: COVERALLS=1
+      env: STABLE=1
     - node_js: "6"
 
+before_script:
+  - if [ "x$STABLE" = "x1" ]; then npm run lint; fi
+
 after_success:
-  - if [ "x$COVERALLS" = "x1" ]; then npm run coveralls; fi
+  - if [ "x$STABLE" = "x1" ]; then npm run coveralls; fi
