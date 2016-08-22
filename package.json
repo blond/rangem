@@ -1,0 +1,36 @@
+{
+  "name": "rangem",
+  "version": "0.0.0",
+  "description": "Range manipulation",
+  "license": "MIT",
+  "repository": "blond/rangem",
+  "author": "Andrew Abramov <mail@blond.im> (github.com/blond)",
+  "keywords": [
+    "range",
+    "segment",
+    "union",
+    "subtract",
+    "border"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/**",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^3.0.0",
+    "eslint-config-pedant": "^0.7.0",
+    "nyc": "^8.1.0"
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "nyc ava",
+    "unit-test": "ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  }
+}
