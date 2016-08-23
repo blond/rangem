@@ -32,9 +32,11 @@ const rangem = require('rangem');
 
 const ranges = rangem.union([{ from: 1, to: 5 }, { from: 5, to: 10 }]);
 
-// ➜ [{ from: 1, to: 3 }]
+// ➜ [{ from: 1, to: 10 }]
 
-rangem.subtract(ranges, [{ from: 5, to: 7 }]);
+const range = ranges.pop(); // { from: 1, to: 3 }
+
+rangem.subtract(range, [{ from: 5, to: 7 }]);
 
 // ➜ [{ from: 1, to: 5 }, { from: 7, to: 10 }]
 ```
