@@ -99,7 +99,7 @@ test('should union ranges with right board in reverse order', function(t) {
         { from: 9, to: 20 },
         { from: 10, to: 15 },
         { from: 11, to: 10 }
-    ];
+    ]; 
 
     var unitedRanges = union(ranges);
 
