@@ -93,3 +93,15 @@ test('should union ranges with equal right board', function(t) {
 
     t.deepEqual(unitedRanges, [{ from: 10, to: 20 }]);
 });
+
+test('should union ranges with right board in reverse order', function(t) {
+    var ranges = [
+        { from: 9, to: 20 },
+        { from: 10, to: 15 },
+        { from: 11, to: 10 }
+    ];
+
+    var unitedRanges = union(ranges);
+
+    t.deepEqual(unitedRanges, [{ from: 9, to: 20 }]);
+});
