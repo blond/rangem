@@ -1,6 +1,8 @@
 rangem
 ======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blond/rangem.svg)](https://greenkeeper.io/)
+
 [![NPM Status][npm-img]][npm]
 [![Travis Status][test-img]][travis]
 [![Coverage Status][coverage-img]][coveralls]
