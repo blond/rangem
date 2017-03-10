@@ -4,11 +4,9 @@ language: node_js
 
 matrix:
   include:
-    - node_js: "0.10"
-    - node_js: "0.12"
     - node_js: "4"
-      env: STABLE=1
     - node_js: "6"
+      env: STABLE=1
 
 before_script:
   - if [ "x$STABLE" = "x1" ]; then npm run lint; fi
